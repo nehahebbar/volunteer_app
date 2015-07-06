@@ -1,8 +1,33 @@
 Rails.application.routes.draw do
-  
+
+  get 'skills/index'
+  get 'skills/new'
+  get 'skills/edit'
+  get 'skills/show'
+
+  get 'listings/index'
+  get 'listings/new'
+  get 'listings/edit'
+  get 'listings/show'
+
+  get 'orgs/index'
+  get 'orgs/new'
+  get 'orgs/edit'
+  get 'orgs/show'
+
+  get 'volunteers/index'
+  get 'volunteers/new'
+  get 'volunteers/edit'
+  get 'volunteers/show'
+
   get 'home', to: 'static_pages#home'
   get 'test', to: 'static_pages#test'
 
+  resources :volunteers
+  resources :orgs
+  resources :skills
+  resources :listings
+  resources :skill_volunteers
   root 'static_pages#home'
 
   # The priority is based upon order of creation: first created -> highest priority.

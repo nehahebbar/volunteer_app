@@ -1,0 +1,6 @@
+<%= simple_form_for @volunteer do |f| %>
+  <%= f.input :name %>
+  <%= f.input :location %>
+  <%= f.association :skills, as: :check_boxes %>
+  <%= f.button :submit, :class => 'btn-primary' %>
+<% end %>
