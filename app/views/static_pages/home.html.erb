@@ -33,37 +33,7 @@
 
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
-        <div class="container topnav">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-              <%= link_to "Goody Two Shoes", root_path, class: "navbar-brand topnav" %>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="#about">About</a>
-                    </li>
-                    <li>
-                        <a href="#contact">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#signin">Sign In</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
-        </div>
-        <!-- /.container -->
-    </nav>
+
 
 
     <!-- Header -->
@@ -79,7 +49,7 @@
                         <ul class="list-inline intro-social-buttons">
 
                             <li>
-                                <%=link_to "Volunteers", test_path, class: 'btn btn-default btn-lg network-name' %>
+                                <%=link_to "Volunteers", volunteers_index_path, class: 'btn btn-default btn-lg network-name' %>
                             </li>
                             <li>
                                 <%=link_to "Organizations", test_path, class: 'btn btn-default btn-lg network-name' %>
@@ -99,15 +69,14 @@
 	<a  name="about"></a>
 
   <div class="content-section-a">
-
     <div class="container">
 
         <div class="row">
             <div class="col-lg-6 col-lg-offset-3">
-                <hr class="section-heading-spacer">
                 <div class="clearfix"></div>
-                <h2 class="section-heading">About Goody Two Shoes</h2>
-                <p class="lead"> Goody Two Shoes is a blah bloo blah </p>
+                <center>
+                <h2 class="section-heading">About Us</h2>
+                <p class="lead"> Goody Two Shoes is a skills-based volunteering platform. We aim to connect organizations with talented individuals who can use their skills and experience to make a real difference. </center> </p>
             </div>
         </div>
 
@@ -125,8 +94,8 @@
                 <div class="col-lg-5 col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Volunteers<br>Volunteer blah blah blah</h2>
-                    <p class="lead">Blah dee blah </p>
+                    <h2 class="section-heading">Volunteers:</h2>
+                    <p class="lead"> Make a more powerful impact by focusing on projects that will truly benefit from your specific skills. </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <%= image_tag("alone_girl.jpg", :class => "img-responsive") %>
@@ -148,8 +117,8 @@
                 <div class="col-lg-5 col-lg-offset-1 col-sm-push-6  col-sm-6">
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
-                    <h2 class="section-heading">Organizations<br>Organizations blah blah</h2>
-                    <p class="lead"> La la la </p>
+                    <h2 class="section-heading">Organizations:</h2>
+                    <p class="lead"> Find skilled professionals that are passionate about your cause and want to use their talents to make a difference. </p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <%= image_tag("meeting.jpg", :class => "img-responsive") %>
