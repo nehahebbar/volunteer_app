@@ -1,2 +1,10 @@
-<h1>Listings#new</h1>
-<p>Find me in app/views/listings/new.html.erb</p>
+  <h1 style="color:#7C76A6;"><b>Create a Listing</b> </h1>
+
+
+<%= simple_form_for @listing do |f| %>
+  <%= f.input :title %>
+  <%= f.input :description %>
+  <%= f.input :estimated_hours %>
+  <%= f.association :skills, as: :check_boxes %>
+  <%= f.button :submit, :class => 'btn-primary' %>
+<% end %>

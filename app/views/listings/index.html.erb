@@ -1,2 +1,38 @@
-<h1>Listings#index</h1>
-<p>Find me in app/views/listings/index.html.erb</p>
+
+<div class="col-md-12">
+  <div class="table-responsive">
+    <h1 style="color:#7C76A6;"><b>All Listings</b> </h1>
+    <br>
+    <br>
+    <table class="table table-hover">
+
+      <!-- This is a table row with headers -->
+      <tr class="small">
+        <th> Listing</th>
+        <th> Description </th>
+        <th> Estimated Hours </th>
+        <th> Relevant Skills </th>
+        <th> Actions </th
+      </tr>
+
+        <% @listings.each do |listing| %>
+        <tr class="small">
+          <td> <%= listing.title %></td>
+          <td> <%= listing.description %></td>
+          <td> <%= listing.estimated_hours %></td>
+          <td> <% listing.skills.each do |skill| %>
+            <%= skill.name %>
+            <% end %>
+
+
+          </td>
+
+          <td>
+            <%=link_to 'Show', listing_path(listing), class: "btn btn-default btn-xs" %>
+            <%= link_to "Delete", listing, method: :delete, data: {confirm: "You sure?"}, class: 'btn btn-xs btn-danger' %>
+          </td>
+       </tr>
+        <% end %>
+    </table>
+  </div>
+</div>
