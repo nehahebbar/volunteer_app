@@ -21,26 +21,23 @@ h6 {
     font-size: 14px;
 }
 
-.alert {
-  padding: 0px;
-}
-
 .lead {
     font-size: 18px;
     font-weight: 400;
 }
 
 .intro-header {
-    padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
-    padding-bottom: 50px;
+    padding-top: 0px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+    padding-bottom: 0px;
     text-align: center;
     color: #f8f8f8;
-    background: url('brown_shoes.jpg') no-repeat center center;
+    background: url('brown_shoes.jpg') no-repeat center bottom;
     background-size: cover;
 }
 
 .intro-message {
     position: relative;
+    bottom: 100px;
     padding-top: 20%;
     padding-bottom: 20%;
 }
