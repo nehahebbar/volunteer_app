@@ -1,7 +1,7 @@
 
 <div class="col-md-12">
   <div class="table-responsive">
-    <h1 style="color:#7C76A6;"><b>All Listings</b> </h1>
+    <h1 style="color:#6D4F56;"><b>Open Projects</b> </h1>
     <br>
     <br>
     <table class="table table-hover">
@@ -12,6 +12,7 @@
         <th> Description </th>
         <th> Estimated Hours </th>
         <th> Relevant Skills </th>
+        <th> Contact </th>
         <th> Actions </th
       </tr>
 
@@ -23,13 +24,11 @@
           <td> <% listing.skills.each do |skill| %>
             <%= skill.name %>
             <% end %>
-
-
           </td>
+          <td> <%= listing.contact %></td>
 
           <td>
             <%=link_to 'Show', listing_path(listing), class: "btn btn-default btn-xs" %>
-            <%= link_to "Delete", listing, method: :delete, data: {confirm: "You sure?"}, class: 'btn btn-xs btn-danger' %>
           </td>
        </tr>
         <% end %>
