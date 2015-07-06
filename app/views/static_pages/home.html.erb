@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html id="landing-page" lang="en">
 
 <head>
 
@@ -31,10 +31,7 @@
 
 </head>
 
-<body>
-
-
-
+<body id="landing-page">
 
     <!-- Header -->
     <div class="intro-header">
@@ -52,7 +49,7 @@
                                 <%=link_to "Volunteers", volunteers_index_path, class: 'btn btn-default btn-lg network-name' %>
                             </li>
                             <li>
-                                <%=link_to "Organizations", test_path, class: 'btn btn-default btn-lg network-name' %>
+                                <%=link_to "Organizations", orgs_path, class: 'btn btn-default btn-lg network-name' %>
                         </ul>
                     </div>
                 </div>
@@ -76,7 +73,7 @@
                 <div class="clearfix"></div>
                 <center>
                 <h2 class="section-heading">About Us</h2>
-                <p class="lead"> Goody Two Shoes is a skills-based volunteering platform. We aim to connect organizations with talented individuals who can use their skills and experience to make a real difference. </center> </p>
+                <p class="lead"> Goody Two Shoes is a skills-based volunteering platform. We aim to connect organizations with talented individuals who can use their skills and experience to make a greater impact. </center> </p>
             </div>
         </div>
 
@@ -95,7 +92,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Volunteers:</h2>
-                    <p class="lead"> Make a more powerful impact by focusing on projects that will truly benefit from your specific skills. </p>
+                    <p class="lead"> Make a real difference by focusing on projects that will truly benefit from your specific skills. </p>
                 </div>
                 <div class="col-lg-5 col-lg-offset-2 col-sm-6">
                     <%= image_tag("alone_girl.jpg", :class => "img-responsive") %>
@@ -118,7 +115,7 @@
                     <hr class="section-heading-spacer">
                     <div class="clearfix"></div>
                     <h2 class="section-heading">Organizations:</h2>
-                    <p class="lead"> Find skilled professionals that are passionate about your cause and want to use their talents to make a difference. </p>
+                    <p class="lead"> Find passionate professionals that want to apply their skills to your cause.  </p>
                 </div>
                 <div class="col-lg-5 col-sm-pull-6  col-sm-6">
                     <%= image_tag("meeting.jpg", :class => "img-responsive") %>

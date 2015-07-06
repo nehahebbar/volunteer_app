@@ -1,4 +1,5 @@
 class Listing < ActiveRecord::Base
-  has_many :skills
-  has_many :volunteers, :through => :skills
+  validates_presence_of :title, :description, :estimated_hours
+  has_many :listing_skills
+  has_many :skills, :through => :listing_skills
 end
