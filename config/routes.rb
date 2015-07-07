@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
-
   devise_for :users
+  
   get 'skills/index'
   get 'skills/new'
   get 'skills/edit'
